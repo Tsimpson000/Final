@@ -1,0 +1,55 @@
+Identify nouns
+
+start with easiest/tables with no foreign keys
+
+Final
+
+Venues
+
+Events
+-eventname
+-date
+-EventOrganizersID
+-BookingMangerID
+
+Artists
+-artistname
+-OrganizerID
+-BookingManagerID
+
+EventOrganizers
+-OrganizerID
+-email
+-phone number
+
+
+BookingManager
+-FirstName
+-LastNme
+-email
+-phone number
+
+RiderRequests
+-item
+-cost
+
+EventsArtists
+-EventsID
+-ArtistsID
+
+ArtistsRiderRequests
+-RiderRequestsID
+-ArtistsID
+
+
+
+
+
+
+Events to EventsArtists is one to many
+BookingManager to Events is one to many
+EventOrganizers to Events is one to many
+BookingManager to Artist is one to many
+EventOrganizers to Artist is one to many
+Artist to ArtistsRiderRequests is one to many
+RiderRequests to ArtistsRiderRequests is one to many
